@@ -1,0 +1,17 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="109.395" height="68" viewBox="0 0 109.395 68">
+  <rect id="Rectangle_14" data-name="Rectangle 14" width="109" height="68" transform="translate(0.395)" fill="#fff"/>
+  <path id="Polygon_1" data-name="Polygon 1" d="M33.95,0,67.9,54.52H0Z" transform="translate(54.62 0.1) rotate(90)" fill="#3a45a5"/>
+  <path id="Path_8" data-name="Path 8" d="M54.5,0,109,34H0Z" transform="translate(109 34) rotate(180)" fill="#3a45a5"/>
+  <path id="Polygon_3" data-name="Polygon 3" d="M54.5,0,109,34H0Z" transform="translate(0.395 34)" fill="#3a45a5"/>
+  <path id="Polygon_4" data-name="Polygon 4" d="M33.95,0,67.9,54.52H0Z" transform="translate(54.62 68) rotate(-90)" fill="#3a45a5"/>
+  <path id="Path_7" data-name="Path 7" d="M0,0H20V68H0Z" transform="translate(45)" fill="#fff"/>
+  <path id="Path_2" data-name="Path 2" d="M0,67.9H10.137l98.9-57.187V0H98.376L0,57.187Z" transform="translate(0.2)" fill="#fff"/>
+  <path id="Path_3" data-name="Path 3" d="M41.685,0h2.85L3.421,25.762H0Z" transform="translate(64.705)" fill="#b51515"/>
+  <path id="Path_1" data-name="Path 1" d="M0,0H10.137l98.9,57.187V67.9H98.376L0,10.713Z" transform="translate(0.2)" fill="#fff"/>
+  <path id="Path_4" data-name="Path 4" d="M41.685,27.36h2.85L3.421,0H0Z" transform="translate(64.705 40.54)" fill="#b51515"/>
+  <path id="Path_5" data-name="Path 5" d="M2.85,0H0L41.114,25.762h3.421Z" transform="translate(0.2)" fill="#b51515"/>
+  <path id="Path_6" data-name="Path 6" d="M2.85,25.762H0L41.114,0h3.421Z" transform="translate(0.2 41.339)" fill="#b51515"/>
+  <rect id="Rectangle_19" data-name="Rectangle 19" width="20" height="109" transform="translate(109.395 24) rotate(90)" fill="#fff"/>
+  <rect id="Rectangle_17" data-name="Rectangle 17" width="13" height="68" transform="translate(48.395)" fill="#b51515"/>
+  <rect id="Rectangle_18" data-name="Rectangle 18" width="13" height="109" transform="translate(109.395 27) rotate(90)" fill="#b51515"/>
+</svg>
