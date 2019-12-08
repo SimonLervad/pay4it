@@ -1,0 +1,471 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:white;
+}
+
+/* 
+	this contains all styles about 
+	the help icon and menu 
+*/
+
+#help {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:lightgrey;
+	text-align:center;
+	z-index:9;
+	transition-duration: 0.75s;
+}
+
+#helpOpen {
+	position:fixed;
+	top:25px;
+	right:25px;
+	font-size:50px;
+	background-color:transparent;
+	border:none;
+	z-index:9;
+	cursor: pointer;
+}
+
+#help h1 {font-size:50px;}
+#help p {font-size:25px;}
+
+#help button {
+	font-size:50px;
+	background-color:transparent;
+	border:none;
+	cursor: pointer;
+}
+
+#closeHelpText {
+	text-decoration: underline;
+}
+
+#closeHelp {
+	position:absolute;
+	z-index:10;
+	top:25px;
+	right:25px;
+}
+
+/* 
+	this contains all styles about 
+	The front page
+*/
+
+#section {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+}
+
+#wrapper {
+	padding:0 50px;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color:;
+}
+
+#wrapper a {
+	font-size:75px;
+	text-align:center;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	width:45%;
+	padding:200px 50px;
+	text-decoration: none;
+	color:white;
+	background-repeat: no-repeat;
+	background-size:cover;
+	box-shadow: 3px 3px 10px grey;
+	text-shadow: 1px 1px 10px black;
+	border-radius: 25px;
+}
+
+#wrapper a i {font-size:200px;}
+
+#language {
+	width:95%;
+	margin:100px 0;
+	display:flex;
+	justify-content: space-around;
+}
+
+#language img {
+	box-shadow: 3px 3px 10px grey;
+}
+
+#vka {background-image: url('images/tanning.jpg');}
+#vsk {background-image: url('images/emotions.jpg');}
+
+/* 
+	this contains all styles about 
+	The "vælg kabine" page 
+	the form about setting up your request
+	and other styles on "kabine.php"
+*/
+
+#container {
+	position:fixed;
+	top:0;
+	left:0;
+	width:500%;
+	height:90%;
+	display:flex;
+	justify-content: space-around;
+	transition-duration: 1s;
+	padding:75px 0;
+}
+#container h1 {
+	text-align:center;
+	font-size:100px;
+}
+#boxOne, #boxTwo, #boxThree, #boxFour, #boxFive {
+	width:100%;
+}
+#kabiner {
+	padding:25px;
+}
+#kabiner li {
+	border-bottom:1px solid black;
+	padding:25px;
+	margin:10px 0;
+	display:flex;
+	justify-content: space-between;
+}
+.number {
+	margin:0;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width:100px;
+	height:100px;
+	border-radius: 50px;
+	text-align:center;
+	font-size:100px;
+}
+.image {
+	width:400px;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+#kabiner img {
+	width:300px;
+}
+#kabiner label {
+	margin:15px 0;
+	font-size:35px;
+	border-radius:15px;
+	text-align:center;
+}
+.perksP i {
+	border:1px solid black;
+	padding:15px;
+	border-radius:50px;
+	font-size:50px;
+	margin:0 10px;
+}
+.perks {
+	min-width:300px;
+}
+.vælgKabine {
+	background-color:transparent;
+	display:block;
+	border:none;
+	float:right;
+	font-size:100px;
+	cursor: pointer;
+	outline:none;
+}
+.vælgKabine i {
+	color:#022B44;
+	border-radius:50px;
+	font-size:100px;
+}
+
+/*
+	This contains all styles about
+	"vælg tid" with information from JSON
+	Author RIKKE DOMINO
+*/
+
+.ordre { /* Bestillingskassen */
+            position:fixed;
+            bottom:10%;
+            left:0;
+            right:0;
+            width:60%;
+            margin:auto;
+            background-color:white;
+            box-shadow:0 0 10px black;
+            display:block;
+            padding:0 40px;
+            transition-duration: 1s;
+            overflow:hidden;
+            height:0;
+            font-size:35px;
+        }
+        .ordreBlack{ /* Den sorte bjælke */
+            border-top:1px solid black;
+            padding-top:10px;
+            margin-top:50px;
+        }
+        #ordreTime{ /* Indholdet i den bestillingskassen */
+            display:flex;
+            justify-content: space-between;
+            margin:10px 0;
+        }
+        #kabine {
+        	margin:10px 0;
+        }
+        .confirmButton {
+        	background-color:white;
+        	border:5px solid #022B44;
+        	border-radius:50px;
+        	width:75%;
+        	color:#022B44;
+        	font-size:40px;
+        	padding:10px 25px;
+        	margin:100px auto;
+        	display:block;
+        }
+.sliderContainer{
+            width: 75%;
+            background-color: #022B44;
+            padding:25px;
+            border-radius: 50px;
+            margin:50px auto;
+        }
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            background: #FFFFFF;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            border-radius: 20px;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: #00A3E2;
+            cursor: pointer;
+        }
+        .slider::-moz-range-thumb {
+            width: 50px;
+            height: 50px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        /* 
+        	godt arbejde
+        	virker sublimt :)
+        */
+
+#time {
+	text-align:center;
+	font-size:75px;
+	display:block;
+}
+#priceTag {
+}
+
+/*
+	The contains all styles 
+	about products
+	AND styles about choosing a product
+*/
+
+#products {
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+.products {
+	width:22.5%;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#confirmProduct {
+	border:0px solid #022B44;
+	transition-duration: 0.5s;
+}
+#produktKøbt {
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0;
+    flex-wrap:wrap;
+}
+.produktListe, .produktListeNavn {
+	width:50%;
+	text-align:right;
+}
+
+.produktListeNavn {
+	text-align:left;
+}
+
+/*
+	This contains styles about
+	the payment site
+	and all different payment sites
+*/
+
+#paymentMethod {
+	background-color:orange;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	border-radius:50px;
+	overflow:hidden;
+	width:90%;
+	margin:auto;
+	border:3px solid #022B44;
+}
+
+.payment {
+	display:block;
+	width:50%;
+	font-size:50px;
+	padding:50px 25px;
+	border:none;
+	cursor: pointer;
+	color:#022B44;
+	background-color:white;
+}
+.payment:nth-child(even) {
+	border-left:1px solid #022B44;	
+}
+.payment:nth-child(1), .payment:nth-child(2) {
+	border-bottom:1px solid #022B44;	
+}
+
+.payment i {
+	font-size:100px;
+	text-align:center;
+}
+
+.payment img {
+	width:100px;
+	text-align:center;
+}
+
+#paymentTypes {
+	position:fixed;
+	top:50%;
+	left:50%;
+	background-color:rgba(0,0,0,0.5);
+	width:0;
+	height:0;
+	overflow:hidden;
+	z-index:50;
+	transition-duration: 0.5s;
+}
+#kortBox, #mobilepayBox, #smsBox, #solkortBox {
+	position:fixed;
+	top:50%;
+	left:5%;
+	width:90%;
+	height:0;
+	background-color:white;
+	box-shadow: 0 0 10px black;
+	text-align:center;
+	transition-delay: 0.5s;
+	transition-duration: 0.5s;
+	overflow:hidden;
+}
+#confirmPayment {
+	position:absolute;
+	bottom:20%;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+/* 
+	this contains all styles about 
+	the footer 
+	and the navigation through all pages 
+*/
+
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	border-top:1px solid black;
+	height:10%;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding:0 75px;
+	z-index:2;
+	background-color:white;
+}
+footer button, footer a {
+	color:black;
+	padding:10px;
+	border:1px solid black;
+	background-color:white;
+}
+footer button i, footer a i {font-size:50px;}
+footer span {
+	display:block;
+	width:50px;
+	height:50px;
+	border:1px solid grey;
+	border-radius: 50px
+}
+footer span:nth-child(even) {
+	height:2px;
+	margin-top:25px;
+}
+.active {background-color:black;}
+footer div {
+	display:flex;
+	justify-content: space-around;
+}
+#tilbage {
+	position:fixed;
+	top:25px;
+	left:25px;
+	border:none;
+	background-color:transparent;
+}
+#reset {
+	position:fixed;
+	top:25px;
+	left:120px;
+	border:none;
+	background-color:transparent;
+}
+#home {
+	position:fixed;
+	top:25px;
+	left:212.5px;
+	border:none;
+	background-color:transparent;
+}

@@ -1,0 +1,12 @@
+to do::
+
+
+
+
+
+Når man trykker næste skal den vælge tilfældig kabine
+
+Hvis man trykker på en kabine skal den gå videre med den kabine (medmindre den er i brug)
+
+Den skal tage værdien af den valgte kabine og sætte som max-værdi på time slider.
+anvend her myRange set attribute max = " MaxRunTime "

@@ -1,99 +1,287 @@
 * {
-	margin:0;
-	padding:0;	
 	box-sizing: border-box;
 }
 body {
-	margin:0;
 	padding:0;
+	margin:0;
+	background-color:white;
 }
 header {
 	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
-	height:20%;
-	background-color:grey;
-	text-align:center;
+	z-index:10;
+	padding:10px;
 	display:flex;
-	justify-content: space-around;
-	flex-direction: column;
-	transition-duration: 1s;
+	flex-direction: row-reverse;
 }
-#title {transition-duration: 1s;}
-#wrapper {
-	position:fixed;
-	top:20%;
-	left:0;
-	width:100%;
-	height:60%;
-	display:flex;
-	justify-content: space-around;
-	flex-direction: column;
-	transition-duration: 1s;
+header img {
+	width:50px;
+	margin:6px 10px;
+	border:1px solid white;
+	box-shadow:1px 1px 5px grey;
 }
-.flex {
-	display: flex;
-	justify-content: center;
-}
-#wrapper a {
-	background-color:lightgrey;
-	display:block;
-	min-height:400px;
-	width:35%;
-	height:100%;
-	padding:25px;
-	text-align:center;
+button:hover, a:hover {
 	cursor: pointer;
-	margin:0 25px;
-	display:flex;
-	justify-content: space-around;
-	flex-direction: column;
-	border:1px solid black;
-	box-shadow: 5px 5px 12px grey;
-}
-#wrapper a i {
-	font-size:150px;
-}
-#footer {
-	position:fixed;
-	top:80%;
-	bottom:0;
-	left:0;
-	width:100%;
-	text-align:center;
-	display:flex;
-	justify-content: space-around;
-	flex-direction: column;
-	transition-duration: 1s;
-}
-#width {
-	width:200%;
-	transition-duration: 1s;
 }
 #help {
-	width:50%;
-	float:right;
-	text-align:right;
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	z-index:9;
+	top:0;
+	width:0;
+	height:0;
+	right:0;
+	padding:50px 25px;
+	opacity:0;
+	transition-duration: 0.5s;
+}
+#helpContainer {
+	margin:auto;
+	width:90%;
+	text-align:center;
+	opacity: 0;
+	background-color:white;
+	box-shadow: 2px 2px 10px grey;
+	transition-duration: 0.5s;
 	padding:25px;
 }
+#helpOpen, #helpClose, #helpCloseTwo {
+	font-size:30px;
+	position:relative;
+	z-index:10;
+	padding:5px 15px;
+	background-color:transparent;
+	border:none;
+	color:white;
+}
+#helpOpen i, #helpClose i, #helpCloseTwo i {font-size:30px;}
+#helpClose {
+	display:none;
+}
 #language {
+	margin:50px auto;
 	width:50%;
-	float:left;
+	display:flex;
+	justify-content: space-around;
 }
-#footer img {
-	margin:0 25px;
-	box-shadow: 2px 2px 6px grey;
-	cursor:pointer;
-	transition-duration: 1s;
+#solkort, #start {
+	position:fixed;
+	z-index:5;
+	top:0;
+	left:0;
+	width:100%;
+	height:50%;
+	background-color:#022B44;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align:center;
+	font-size:50px;
+	color:white;
+	text-decoration: none;
 }
+#start {
+	top:50%;
+	background-color:#16A1E2;
+}
+i {font-size:100px;}
 #container {
 	position:fixed;
 	top:10%;
 	left:0;
-	width:100%;
-	height:85%;
-	opacity:0;
+	width:500%;
+	height:80%;
+	display:flex;
+	justify-content: space-around;
 	transition-duration: 1s;
-	padding:50px;
+}
+#container h1 {
+	text-align:center;
+	font-size:50px;
+}
+#boxOne, #boxTwo, #boxThree, #boxFour, #boxFive {
+	width:100%;
+}
+#kabiner {
+	padding:25px;
+}
+#kabiner li {
+	border-bottom:1px solid black;
+	padding:25px;
+	margin:10px 0;
+	display:flex;
+	justify-content: space-between;
+}
+.number {
+	margin:0;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	border:1px solid black;
+	width:100px;
+	height:100px;
+	border-radius: 50px;
+	text-align:center;
+	font-size:100px;
+}
+.image {
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top:25px;
+}
+.image label {
+	margin:15px 0;
+	font-size:35px;
+	border-radius:15px;
+	text-align:center;
+}
+.perksP i {
+	border:1px solid black;
+	padding:15px;
+	border-radius:50px;
+	font-size:50px;
+	margin:0 10px;
+}
+.perks {
+	min-width:300px;
+}
+.vælgKabine {
+	background-color:transparent;
+	display:block;
+	border:none;
+	float:right;
+}
+.vælgKabine i {
+	background-color:#7AC377;
+	border-radius:50px;
+}
+
+.ordre{ /* Bestillingskassen */
+            top: 50%;
+            position: relative;
+        }
+        #title{ /* Overskrift */
+            padding: 30px;
+            text-align: center;
+            background: #022B44;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+        .ordreBlack{ /* Den sorte bjælke */
+            background-color: black;
+            color:#f2f2f2;
+            padding: 5px;
+        }
+        #ordreTime{ /* Indholdet i den bestillingskassen */
+            padding: 12px;
+            border: 1px black solid;
+            border-radius: 20px;
+            width: 17%;
+            margin-top: 20px;
+        }
+        .pickTime{ /* cirklerne */
+            height: auto;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        /*slider*/
+        .sliderContainer{
+            height: 50px;
+            width: 300px;
+            background-color: #022B44;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 20px auto;
+            display:flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .slider {
+            -webkit-appearance: none;
+            width: 90%;
+            height: 5px;
+            background: #FFFFFF;
+            margin: 0 15px;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            border-radius: 20px;
+        }
+        .slider:hover {
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            background: #00A3E2;
+            cursor: pointer;
+        }
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+
+
+
+
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	border-top:1px solid black;
+	height:10%;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding:0 75px;
+}
+footer button, footer a {
+	color:black;
+	padding:10px;
+	border:1px solid black;
+	background-color:white;
+}
+footer button i, footer a i {font-size:50px;}
+footer span {
+	display:block;
+	width:50px;
+	height:50px;
+	border:1px solid grey;
+	border-radius: 50px
+}
+footer span:nth-child(even) {
+	height:2px;
+	margin-top:25px;
+}
+.active {background-color:black;}
+footer div {
+	display:flex;
+	justify-content: space-around;
+}
+#tilbage {
+	position:fixed;
+	top:25px;
+	left:25px;
+}
+#reset {
+	position:fixed;
+	top:25px;
+	left:120px;
+}
+#home {
+	position:fixed;
+	top:25px;
+	left:212.5px;
 }

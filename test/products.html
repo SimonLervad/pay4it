@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay4it</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://kit.fontawesome.com/9f34627289.js"></script>
+    <script type="module" src="test.js"></script>
+    <!--script type="module" src="./script.js"></script-->
+    <style>
+        html, body {
+            height: 100%;
+            background-color: #fcfcfc;
+        }
+        main,header,nav,section,article,footer{
+            width:100%;
+            max-width:100%;
+        }
+        section{
+            flex: 1;
+            font-size: 20px;
+        }
+        html {
+            overflow-y: scroll;
+        }
+        body {
+            font-size:16px;
+            font-family: Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            line-height: 21px;
+        }
+        .ordre{ /* Bestillingskassen */
+            top: 50%;
+            position: relative;
+        }
+        #title{ /* Overskrift */
+            padding: 30px;
+            text-align: center;
+            background: grey;
+            margin: 30px;
+        }
+        .ordreBlack{ /* Den sorte bjælke */
+            background-color: black;
+            color:#f2f2f2;
+            padding: 5px;
+        }
+        #ordreTime{ /* Indholdet i den bestillingskassen */
+            padding: 12px;
+            border: 1px black solid;
+            border-radius: 20px;
+            width: 17%;
+            margin-top: 20px;
+        }
+        .footer a { /* frem/tilbage */
+            outline: 2px #00A3E2 solid;
+            padding: 9px;
+            font-size: 17px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+        .circel{ /* cirklerne */
+            border: 1px black solid;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            float: left;
+            margin: 0 5px;
+        }
+        .test{
+            background: blue;
+        width: 10px;
+        height: 10px;
+        margin: 10px
+        }
+         /*slider*/
+         .sliderContainer{
+            height: 25px;
+            width: 300px;
+            background-color: #022B44;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+        .slider {
+            -webkit-appearance: none;
+            width: 90%;
+            height: 5px;
+            background: #FFFFFF;
+            margin: 0 15px;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            border-radius: 20px;
+        }
+        .slider:hover {
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            background: #00A3E2;
+            cursor: pointer;
+        }
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+        
+<div id="timetest"></div>
+
+<div id="test"></div>
+
+<article class="pickTime"><!--Vælg tid-->
+    <div>
+        <label for="time" id="time">10 min</label> <br>
+        <div class="sliderContainer">
+            <input type="range" class="slider" id="myRange">
+        </div>
+    </div>
+    <div id="priceTag"> </div>
+</article>
+<article class="ordre"> <!--Bestillingskassen-->
+    <div class="ordreBlack">
+        Din bestilling <span id="total" style="float: right;">Total: 10 kr.</span>
+    </div>
+    <div id="ordreTime"> </div>
+</article>
+
+
+
+</body>
+</html>
